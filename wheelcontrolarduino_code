@@ -8,7 +8,7 @@
  int L_right=5;
 
   
- //lift motor 
+ //left motor 
  int R_left=6;
  int L_left=9;
   
