@@ -1,0 +1,14 @@
+controller_manager:
+  update_rate: 100
+
+# Diff Drive Controller Configuration
+diff_drive_controller:
+  type: "diff_drive_controller/DiffDriveController"
+  left_wheel: "left_wheel"
+  right_wheel: "right_wheel"
+  wheel_separation: 0.5    # Adjust according to the wheelchair’s geometry
+  wheel_radius: 0.1        # Adjust based on your wheelchair’s wheel size
+  cmd_vel_timeout: 0.5     # Timeout for commands
+  publish_rate: 50.0       # Rate for odometry publishing
+  odom_frame_id: "odom"
+  base_frame_id: "base_link"
