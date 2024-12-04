@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<robot name="wc_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- Define Materials -->
+    <material name="grey">
+        <color rgba="0.7 0.7 0.7 1" />
+    </material>
+
+    <material name="green">
+        <color rgba="0 0.6 0 1" />
+    </material>
+
+    <material name="white">
+        <color rgba="1 1 1 1" />
+    </material>
+
+    <!-- Base Footprint -->
+    <link name="base_footprint" />
+
+    <!-- Base Link -->
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <box size="0.6 0.4 0.2" />  <!-- length, width, height -->
+            </geometry>
+            <origin xyz="0 0 0.1" rpy="0 0 0" />
+            <material name="green" />
+        </visual>
+    </link>
+
+    <!-- LIDAR -->
+    <link name="lidar">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.05" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <material name="white" />
+        </visual>
+    </link>
+
+    <!-- Left Wheel -->
+    <link name="left_wheel">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.05" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.5707963268 0 0" />
+            <material name="grey" />
+        </visual>
+    </link>
+
+    <!-- Right Wheel -->
+    <link name="right_wheel">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.05" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.5707963268 0 0" />
+            <material name="grey" />
+        </visual>
+    </link>
+
+    <!-- Castor Wheel -->
+    <link name="castor_wheel">
+        <visual>
+            <geometry>
+                <sphere radius="0.05" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <material name="grey" />
+        </visual>
+    </link>
+
+    <!-- Joints -->
+    <joint name="base_joint" type="fixed">
+        <parent link="base_footprint" />
+        <child link="base_link" />
+        <origin xyz="0 0 0.1" rpy="0 0 0" />
+    </joint>
+
+    <joint name="base_lidar_joint" type="fixed">
+        <parent link="base_link" />
+        <child link="lidar" />
+        <origin xyz="0 0 0.225" rpy="0 0 0" /> 
+    </joint>
+
+    <joint name="base_left_wheel_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="left_wheel" />
+        <origin xyz="-0.15 0.225 0" rpy="0 0 0" /> 
+        <axis xyz="0 1 0" />
+    </joint>
+
+    <joint name="base_right_wheel_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="right_wheel" />
+        <origin xyz="-0.15 -0.225 0" rpy="0 0 0" /> 
+        <axis xyz="0 1 0" />
+    </joint>
+
+    <joint name="base_castor" type="fixed">
+        <parent link="base_link" />
+        <child link="castor_wheel" />
+        <origin xyz="0.2 0 -0.05" rpy="0 0 0" /> 
+    </joint>
+
+    <!-- Gazebo Plugins -->
+    <gazebo>
+        <plugin name="lidar_plugin" filename="libgazebo_ros_ray_sensor.so">
+            <ros>
+                <remapping>scan:=/scan</remapping>
+            </ros>
+            <sensor>lidar_sensor</sensor>
+        </plugin>
+    </gazebo>
+
+<!-- LIDAR Sensor -->
+    <gazebo reference="lidar">
+        <sensor type="ray" name="lidar_sensor">
+            <pose>0 0 0.1 0 0 0</pose>
+            <update_rate>30</update_rate> 
+            <ray>
+                <scan>
+                    <horizontal>
+                        <samples>360</samples> 
+                        <resolution>1</resolution> 
+                        <min_angle>-3.14159</min_angle>
+                        <max_angle>3.14159</max_angle> 
+                    </horizontal>
+                </scan>
+                <range>
+                    <min>0.12</min> 
+                    <max>12.0</max> 
+                </range>
+            </ray>
+        </sensor>
+    </gazebo>
+
+</robot>

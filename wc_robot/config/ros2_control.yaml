@@ -7,7 +7,7 @@ diff_drive_controller:
     left_wheel_names: ["left_wheel"]   
     right_wheel_names: ["right_wheel"]  
 
-    wheel_separation: 0.5              
+    wheel_separation: 0.45              
     wheel_radius: 0.1                 
     odom_frame_id: "odom"              
     base_frame_id: "base_link"        

@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+../build/wc_robot/wc_robot.egg-info/PKG-INFO
+../build/wc_robot/wc_robot.egg-info/SOURCES.txt
+../build/wc_robot/wc_robot.egg-info/dependency_links.txt
+../build/wc_robot/wc_robot.egg-info/entry_points.txt
+../build/wc_robot/wc_robot.egg-info/requires.txt
+../build/wc_robot/wc_robot.egg-info/top_level.txt
+../build/wc_robot/wc_robot.egg-info/zip-safe
+resource/wc_robot
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+wc_robot/__init__.py
