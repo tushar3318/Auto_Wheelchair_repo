@@ -1,0 +1,16 @@
+[0.345s] Invoking command in '/home/vikas_maurya/ros2_ws/src/Auto_Wheelchair_repo/wc_robot/build/wc_robot': PYTHONPATH=/home/vikas_maurya/ros2_ws/src/Auto_Wheelchair_repo/wc_robot/build/wc_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vikas_maurya/ros2_ws/src/Auto_Wheelchair_repo/wc_robot/install/wc_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vikas_maurya/ros2_ws/src/Auto_Wheelchair_repo/wc_robot/build/wc_robot/build --no-deps symlink_data
+[0.498s] running develop
+[0.584s] running egg_info
+[0.584s] writing wc_robot.egg-info/PKG-INFO
+[0.584s] writing dependency_links to wc_robot.egg-info/dependency_links.txt
+[0.584s] writing entry points to wc_robot.egg-info/entry_points.txt
+[0.585s] writing requirements to wc_robot.egg-info/requires.txt
+[0.585s] writing top-level names to wc_robot.egg-info/top_level.txt
+[0.585s] reading manifest file 'wc_robot.egg-info/SOURCES.txt'
+[0.586s] writing manifest file 'wc_robot.egg-info/SOURCES.txt'
+[0.586s] running build_ext
+[0.587s] Creating /home/vikas_maurya/ros2_ws/src/Auto_Wheelchair_repo/wc_robot/install/wc_robot/lib/python3.10/site-packages/wc-robot.egg-link (link to .)
+[0.587s] 
+[0.587s] Installed /home/vikas_maurya/ros2_ws/src/Auto_Wheelchair_repo/wc_robot/build/wc_robot
+[0.587s] running symlink_data
+[0.603s] Invoked command in '/home/vikas_maurya/ros2_ws/src/Auto_Wheelchair_repo/wc_robot/build/wc_robot' returned '0': PYTHONPATH=/home/vikas_maurya/ros2_ws/src/Auto_Wheelchair_repo/wc_robot/build/wc_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vikas_maurya/ros2_ws/src/Auto_Wheelchair_repo/wc_robot/install/wc_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vikas_maurya/ros2_ws/src/Auto_Wheelchair_repo/wc_robot/build/wc_robot/build --no-deps symlink_data

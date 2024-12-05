@@ -1,0 +1,1 @@
+/home/vikas_maurya/ros2_ws/src/Auto_Wheelchair_repo/wc_robot/build/wc_robot/launch/gzebo_rviz.launch.py
