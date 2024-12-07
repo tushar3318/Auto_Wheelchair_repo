@@ -115,6 +115,37 @@
         </plugin>
     </gazebo>
 
+    <gazebo>
+        <plugin name="gazebo_ros_joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
+            <update_rate>20</update_rate>
+            <joint_name>base_joint</joint_name>
+            <joint_name>base_lidar_joint</joint_name>
+            <joint_name>base_left_wheel_joint</joint_name>
+            <joint_name>base_right_wheel_joint</joint_name>
+            <joint_name>base_castor</joint_name>
+        </plugin>
+    </gazebo>
+
+    <gazebo reference="base_link">
+        <material>Gazebo/Green</material>
+    </gazebo>
+
+    <gazebo reference="lidar">
+        <material>Gazebo/White</material>
+    </gazebo>
+
+    <gazebo reference="left_wheel">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <gazebo reference="right_wheel">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <gazebo reference="castor_wheel">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+
 <!-- LIDAR Sensor -->
     <gazebo reference="lidar">
         <sensor type="ray" name="lidar_sensor">
