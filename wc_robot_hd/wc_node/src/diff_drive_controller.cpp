@@ -2,7 +2,7 @@
 
 #include <memory>
 
-using robotis::wc::DiffDriveController;
+using wc_ad::wc::DiffDriveController;
 
 DiffDriveController::DiffDriveController(const float wheel_seperation, const float wheel_radius)
 : Node("diff_drive_controller", rclcpp::NodeOptions().use_intra_process_comms(true))

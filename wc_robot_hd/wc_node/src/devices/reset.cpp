@@ -3,7 +3,7 @@
 #include <memory>
 #include <string>
 
-using robotis::wc::devices::Reset;
+using wc_ad::wc::devices::Reset;
 
 Reset::Reset(
   std::shared_ptr<rclcpp::Node> & nh,
