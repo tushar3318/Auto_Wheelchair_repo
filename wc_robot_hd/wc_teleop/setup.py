@@ -17,7 +17,6 @@ setup(
     zip_safe=True,
     maintainer='vikas_maurya',
     maintainer_email='22ee01049@iitbbs.ac.in',
-    description='TODO: Package description',
     license='TODO: License declaration',
     keywords=['ROS'],
     description=(

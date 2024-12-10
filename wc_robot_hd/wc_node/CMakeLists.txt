@@ -31,19 +31,19 @@ include_directories(
 )
 
 add_library(${PROJECT_NAME}_lib
-  "src/devices/motor_power.cpp"
-  "src/devices/sound.cpp"
-  "src/devices/reset.cpp"
+  #"src/devices/motor_power.cpp"
+  #"src/devices/sound.cpp"
+  #"src/devices/reset.cpp"
 
   "src/diff_drive_controller.cpp"
-  "src/dynamixel_sdk_wrapper.cpp"
+  # "src/dynamixel_sdk_wrapper.cpp"
   "src/odometry.cpp"
   "src/wc.cpp"
 
-  "src/sensors/battery_state.cpp"
-  "src/sensors/imu.cpp"
-  "src/sensors/joint_state.cpp"
-  "src/sensors/sensor_state.cpp"
+  #"src/sensors/battery_state.cpp"
+  #"src/sensors/imu.cpp"
+  #"src/sensors/joint_state.cpp"
+  #"src/sensors/sensor_state.cpp"
 )
 
 set(DEPENDENCIES

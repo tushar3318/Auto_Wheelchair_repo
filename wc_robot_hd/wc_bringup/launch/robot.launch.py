@@ -45,7 +45,7 @@ def generate_launch_description():
         DeclareLaunchArgument(
             'wc_param_dir',
             default_value=wc_param_dir,
-            description='Full path to turtlebot3 parameter file to load'),
+            description='Full path to wc parameter file to load'),
 
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
