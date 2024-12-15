@@ -36,7 +36,6 @@ add_library(${PROJECT_NAME}_lib
   #"src/devices/reset.cpp"
 
   "src/diff_drive_controller.cpp"
-  # "src/dynamixel_sdk_wrapper.cpp"
   "src/odometry.cpp"
   "src/wc.cpp"
 

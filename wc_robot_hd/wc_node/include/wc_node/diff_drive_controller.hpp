@@ -6,7 +6,7 @@
 
 #include <rclcpp/rclcpp.hpp>
 
-#include "wc_node/include/odometry.hpp"
+#include "wc_node/odometry.hpp"
 
 namespace wc_ad
 {

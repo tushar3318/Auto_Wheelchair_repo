@@ -8,7 +8,7 @@
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
-  <depend>dynamixel_sdk</depend>
+  <depend>YDLidar-SDK</depend>
   <depend>geometry_msgs</depend>
   <depend>message_filters</depend>
   <depend>nav_msgs</depend>
