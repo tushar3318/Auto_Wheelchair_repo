@@ -1,4 +1,4 @@
-// #include "wc_node/include/diff_drive_controller.hpp"
+#include "wc_node/diff_drive_controller.hpp"
 
 #include <memory>
 

@@ -1,14 +1,17 @@
 #include "wc_node/wc.hpp"
+#include <cmath>
+#include <rclcpp/rclcpp.hpp>
 
-using wc_ad::wc::Wc;
-using namespace std::chrono_literals;
+namespace wc_ad {
+namespace wc {
 
 Wc::Wc(
   std::shared_ptr<rclcpp::Node> & nh,
-  const double wheel_radius,
-  const double hall_resolution,
+  double wheel_radius,
+  double hall_resolution,
   const std::string lidar_topic)
-: nh_(nh),
+: rclcpp::Node("wc_node"),  // Initialize Node
+  nh_(nh),
   wheel_radius_(wheel_radius),
   hall_resolution_(hall_resolution),
   lidar_topic_(lidar_topic),
@@ -16,6 +19,9 @@ Wc::Wc(
   hall_sensor_count_(0.0)
 {
   RCLCPP_INFO(nh_->get_logger(), "Initializing WC Node");
+
+  wheels_.radius = wheel_radius;  // Initialize wheel radius
+  wheels_.separation = 0.5;       // Set wheel separation (adjust this value as needed)
 
   nh_->declare_parameter<std::string>("odometry.frame_id", "odom");
   nh_->declare_parameter<std::string>("odometry.child_frame_id", "base_link");
@@ -62,7 +68,7 @@ void Wc::lidar_callback(const sensor_msgs::msg::LaserScan::SharedPtr lidar_msg)
 bool Wc::calculate_odometry(const rclcpp::Duration & duration)
 {
   double delta_s = (hall_sensor_count_ / hall_resolution_) * 2 * M_PI * wheel_radius_;
-  static double last_theta = 0.0;
+  //static double last_theta = 0.0;
   double delta_theta = 0.0;
 
   double step_time = duration.seconds();
@@ -123,3 +129,5 @@ void Wc::update_lidar_data(const sensor_msgs::msg::LaserScan::SharedPtr lidar_ms
   RCLCPP_DEBUG(nh_->get_logger(), "LiDAR data received. Range count: %zu", lidar_msg->ranges.size());
 }
 
+}  // namespace wc
+}  // namespace wc_ad
