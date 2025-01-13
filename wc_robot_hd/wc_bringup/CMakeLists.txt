@@ -19,4 +19,9 @@ install(
   DESTINATION share/${PROJECT_NAME}
 )
 
+install(
+  PROGRAMS scripts/motor_controller.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 ament_package()

@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-
 import os
 
 from ament_index_python.packages import get_package_share_directory
@@ -14,7 +13,7 @@ from launch_ros.actions import Node
 
 
 def generate_launch_description():
-    LDS_LAUNCH_FILE = 'ydlidar_ros2_driver/launch/ydlidar_launch.py'
+    LDS_LAUNCH_FILE = 'ydlidar_launch.py'
 
     usb_port = LaunchConfiguration('usb_port', default='/dev/ttyACM0')
 
@@ -27,7 +26,7 @@ def generate_launch_description():
 
     lidar_pkg_dir = LaunchConfiguration(
         'lidar_pkg_dir',
-        default=os.path.join(get_package_share_directory('ydlidar_ros2_driver'), 'launch'))
+        default=os.path.join(get_package_share_directory('ydlidar_ros2_driver'), 'launch/'))
 
     use_sim_time = LaunchConfiguration('use_sim_time', default='false')
 
@@ -60,8 +59,17 @@ def generate_launch_description():
 
         Node(
             package='wc_node',
-            executable='wc_ros',
+            executable='wc_robot_wc',
             parameters=[wc_param_dir],
             arguments=['-i', usb_port],
             output='screen'),
+
+        Node(
+            package='wc_bringup',
+            executable='motor_controller.py', 
+            output='screen',
+            parameters=[
+                {'usb_port': usb_port}
+            ],
+        ),
     ])
