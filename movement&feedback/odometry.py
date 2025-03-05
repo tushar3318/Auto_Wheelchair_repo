@@ -28,11 +28,12 @@ class Odometry(Node):
                 self.get_logger().warn(f"Malformed data received: {data}")
                 return
 
-            left_rpm = int(parts[0])
-            right_rpm = int(parts[1])
+            R,L=10.16,40
+            left_vel = (2 * 3.14159265 *int(parts[0])*R)/60
+            right_vel = (2 * 3.14159265 *int(parts[1])*R)/60
+            linear_velocity = (left_vel + right_vel) / 2
+            angular_velocity = (right_vel - left_vel) /L
 
-            linear_velocity = (left_rpm + right_rpm) / 2.0 * 0.01
-            angular_velocity = (right_rpm - left_rpm) * 0.01
 
             msg = Twist()
             msg.linear.x = linear_velocity
