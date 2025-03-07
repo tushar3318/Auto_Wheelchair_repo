@@ -28,7 +28,7 @@ class Odometry(Node):
                 self.get_logger().warn(f"Malformed data received: {data}")
                 return
 
-            R,L=10.16,40
+            R,L=10.16,54
             left_vel = (2 * 3.14159265 *int(parts[0])*R)/60
             right_vel = (2 * 3.14159265 *int(parts[1])*R)/60
             linear_velocity = (left_vel + right_vel) / 2
