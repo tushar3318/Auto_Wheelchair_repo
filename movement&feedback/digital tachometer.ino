@@ -18,8 +18,8 @@ void RIGHT_COUNTER()
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
-  pinMode(LEFT_HALLSENSOR_PIN,INPUT);
-  pinMode(RIGHT_HALLSENSOR_PIN,INPUT);
+  pinMode(LEFT_HALLSENSOR_PIN,INPUT_PULLUP);
+  pinMode(RIGHT_HALLSENSOR_PIN,INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(LEFT_HALLSENSOR_PIN),LEFT_COUNTER,CHANGE);
   attachInterrupt(digitalPinToInterrupt(RIGHT_HALLSENSOR_PIN),RIGHT_COUNTER,CHANGE);
 }
@@ -27,14 +27,14 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
 
-  nointerrupts();
+  noInterrupts();
   LEFT_PULSE_COUNT=0;
   RIGHT_PULSE_COUNT=0;
   interrupts();
 
-  delay(TIME)
+  delay(TIME);
 
-  nointerrupts();
+  noInterrupts();
   long LEFT_PULSE=LEFT_PULSE_COUNT;
   long RIGHT_PULSE=RIGHT_PULSE_COUNT;
   interrupts();
