@@ -1,4 +1,0 @@
-[console_scripts]
-motor_cont = pre_launch.scripts.motor_cont:main
-wc_node_main = pre_launch.scripts.wc_node_main:main
-
