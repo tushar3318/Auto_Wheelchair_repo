@@ -1,0 +1,44 @@
+[0.371s] Invoking command in '/home/vikas_maurya/wc_ws/src/pre_launch': PYTHONPATH=/home/vikas_maurya/wc_ws/build/pre_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pre_launch build --build-base /home/vikas_maurya/wc_ws/build/pre_launch/build install --record /home/vikas_maurya/wc_ws/build/pre_launch/install.log --single-version-externally-managed install_data
+[0.511s] running egg_info
+[0.511s] creating ../../build/pre_launch/pre_launch.egg-info
+[0.511s] writing ../../build/pre_launch/pre_launch.egg-info/PKG-INFO
+[0.511s] writing dependency_links to ../../build/pre_launch/pre_launch.egg-info/dependency_links.txt
+[0.511s] writing entry points to ../../build/pre_launch/pre_launch.egg-info/entry_points.txt
+[0.512s] writing requirements to ../../build/pre_launch/pre_launch.egg-info/requires.txt
+[0.512s] writing top-level names to ../../build/pre_launch/pre_launch.egg-info/top_level.txt
+[0.512s] writing manifest file '../../build/pre_launch/pre_launch.egg-info/SOURCES.txt'
+[0.513s] reading manifest file '../../build/pre_launch/pre_launch.egg-info/SOURCES.txt'
+[0.513s] writing manifest file '../../build/pre_launch/pre_launch.egg-info/SOURCES.txt'
+[0.513s] running build
+[0.513s] running build_py
+[0.513s] creating /home/vikas_maurya/wc_ws/build/pre_launch/build
+[0.513s] creating /home/vikas_maurya/wc_ws/build/pre_launch/build/lib
+[0.513s] creating /home/vikas_maurya/wc_ws/build/pre_launch/build/lib/pre_launch
+[0.513s] copying pre_launch/__init__.py -> /home/vikas_maurya/wc_ws/build/pre_launch/build/lib/pre_launch
+[0.514s] creating /home/vikas_maurya/wc_ws/build/pre_launch/build/lib/scripts
+[0.514s] copying scripts/motor_cont.py -> /home/vikas_maurya/wc_ws/build/pre_launch/build/lib/scripts
+[0.514s] copying scripts/__init__.py -> /home/vikas_maurya/wc_ws/build/pre_launch/build/lib/scripts
+[0.514s] copying scripts/wc_node_main.py -> /home/vikas_maurya/wc_ws/build/pre_launch/build/lib/scripts
+[0.514s] running install
+[0.514s] running install_lib
+[0.514s] creating /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/pre_launch
+[0.514s] copying /home/vikas_maurya/wc_ws/build/pre_launch/build/lib/pre_launch/__init__.py -> /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/pre_launch
+[0.514s] creating /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/scripts
+[0.514s] copying /home/vikas_maurya/wc_ws/build/pre_launch/build/lib/scripts/motor_cont.py -> /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/scripts
+[0.515s] copying /home/vikas_maurya/wc_ws/build/pre_launch/build/lib/scripts/__init__.py -> /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/scripts
+[0.515s] copying /home/vikas_maurya/wc_ws/build/pre_launch/build/lib/scripts/wc_node_main.py -> /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/scripts
+[0.515s] byte-compiling /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/pre_launch/__init__.py to __init__.cpython-310.pyc
+[0.515s] byte-compiling /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/scripts/motor_cont.py to motor_cont.cpython-310.pyc
+[0.515s] byte-compiling /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/scripts/__init__.py to __init__.cpython-310.pyc
+[0.515s] byte-compiling /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/scripts/wc_node_main.py to wc_node_main.cpython-310.pyc
+[0.516s] running install_data
+[0.516s] creating /home/vikas_maurya/wc_ws/install/pre_launch/share/ament_index
+[0.516s] creating /home/vikas_maurya/wc_ws/install/pre_launch/share/ament_index/resource_index
+[0.516s] creating /home/vikas_maurya/wc_ws/install/pre_launch/share/ament_index/resource_index/packages
+[0.516s] copying resource/pre_launch -> /home/vikas_maurya/wc_ws/install/pre_launch/share/ament_index/resource_index/packages
+[0.517s] copying package.xml -> /home/vikas_maurya/wc_ws/install/pre_launch/share/pre_launch
+[0.517s] running install_egg_info
+[0.517s] Copying ../../build/pre_launch/pre_launch.egg-info to /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/pre_launch-0.0.0-py3.10.egg-info
+[0.518s] running install_scripts
+[0.531s] writing list of installed files to '/home/vikas_maurya/wc_ws/build/pre_launch/install.log'
+[0.547s] Invoked command in '/home/vikas_maurya/wc_ws/src/pre_launch' returned '0': PYTHONPATH=/home/vikas_maurya/wc_ws/build/pre_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pre_launch build --build-base /home/vikas_maurya/wc_ws/build/pre_launch/build install --record /home/vikas_maurya/wc_ws/build/pre_launch/install.log --single-version-externally-managed install_data

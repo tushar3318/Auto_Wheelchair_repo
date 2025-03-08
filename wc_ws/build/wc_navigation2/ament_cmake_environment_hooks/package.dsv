@@ -1,0 +1,4 @@
+source;share/wc_navigation2/local_setup.bash
+source;share/wc_navigation2/local_setup.dsv
+source;share/wc_navigation2/local_setup.sh
+source;share/wc_navigation2/local_setup.zsh

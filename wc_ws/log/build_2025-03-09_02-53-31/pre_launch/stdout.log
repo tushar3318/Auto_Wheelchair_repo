@@ -1,0 +1,42 @@
+running egg_info
+creating ../../build/pre_launch/pre_launch.egg-info
+writing ../../build/pre_launch/pre_launch.egg-info/PKG-INFO
+writing dependency_links to ../../build/pre_launch/pre_launch.egg-info/dependency_links.txt
+writing entry points to ../../build/pre_launch/pre_launch.egg-info/entry_points.txt
+writing requirements to ../../build/pre_launch/pre_launch.egg-info/requires.txt
+writing top-level names to ../../build/pre_launch/pre_launch.egg-info/top_level.txt
+writing manifest file '../../build/pre_launch/pre_launch.egg-info/SOURCES.txt'
+reading manifest file '../../build/pre_launch/pre_launch.egg-info/SOURCES.txt'
+writing manifest file '../../build/pre_launch/pre_launch.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/vikas_maurya/wc_ws/build/pre_launch/build
+creating /home/vikas_maurya/wc_ws/build/pre_launch/build/lib
+creating /home/vikas_maurya/wc_ws/build/pre_launch/build/lib/pre_launch
+copying pre_launch/__init__.py -> /home/vikas_maurya/wc_ws/build/pre_launch/build/lib/pre_launch
+creating /home/vikas_maurya/wc_ws/build/pre_launch/build/lib/scripts
+copying scripts/motor_cont.py -> /home/vikas_maurya/wc_ws/build/pre_launch/build/lib/scripts
+copying scripts/__init__.py -> /home/vikas_maurya/wc_ws/build/pre_launch/build/lib/scripts
+copying scripts/wc_node_main.py -> /home/vikas_maurya/wc_ws/build/pre_launch/build/lib/scripts
+running install
+running install_lib
+creating /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/pre_launch
+copying /home/vikas_maurya/wc_ws/build/pre_launch/build/lib/pre_launch/__init__.py -> /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/pre_launch
+creating /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/scripts
+copying /home/vikas_maurya/wc_ws/build/pre_launch/build/lib/scripts/motor_cont.py -> /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/scripts
+copying /home/vikas_maurya/wc_ws/build/pre_launch/build/lib/scripts/__init__.py -> /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/scripts
+copying /home/vikas_maurya/wc_ws/build/pre_launch/build/lib/scripts/wc_node_main.py -> /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/scripts
+byte-compiling /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/pre_launch/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/scripts/motor_cont.py to motor_cont.cpython-310.pyc
+byte-compiling /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/scripts/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/scripts/wc_node_main.py to wc_node_main.cpython-310.pyc
+running install_data
+creating /home/vikas_maurya/wc_ws/install/pre_launch/share/ament_index
+creating /home/vikas_maurya/wc_ws/install/pre_launch/share/ament_index/resource_index
+creating /home/vikas_maurya/wc_ws/install/pre_launch/share/ament_index/resource_index/packages
+copying resource/pre_launch -> /home/vikas_maurya/wc_ws/install/pre_launch/share/ament_index/resource_index/packages
+copying package.xml -> /home/vikas_maurya/wc_ws/install/pre_launch/share/pre_launch
+running install_egg_info
+Copying ../../build/pre_launch/pre_launch.egg-info to /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/pre_launch-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/vikas_maurya/wc_ws/build/pre_launch/install.log'

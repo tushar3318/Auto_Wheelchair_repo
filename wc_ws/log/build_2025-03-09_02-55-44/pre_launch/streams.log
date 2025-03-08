@@ -1,0 +1,22 @@
+[0.374s] Invoking command in '/home/vikas_maurya/wc_ws/src/pre_launch': PYTHONPATH=/home/vikas_maurya/wc_ws/build/pre_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pre_launch build --build-base /home/vikas_maurya/wc_ws/build/pre_launch/build install --record /home/vikas_maurya/wc_ws/build/pre_launch/install.log --single-version-externally-managed install_data
+[0.510s] running egg_info
+[0.511s] writing ../../build/pre_launch/pre_launch.egg-info/PKG-INFO
+[0.511s] writing dependency_links to ../../build/pre_launch/pre_launch.egg-info/dependency_links.txt
+[0.511s] writing entry points to ../../build/pre_launch/pre_launch.egg-info/entry_points.txt
+[0.511s] writing requirements to ../../build/pre_launch/pre_launch.egg-info/requires.txt
+[0.511s] writing top-level names to ../../build/pre_launch/pre_launch.egg-info/top_level.txt
+[0.512s] reading manifest file '../../build/pre_launch/pre_launch.egg-info/SOURCES.txt'
+[0.512s] writing manifest file '../../build/pre_launch/pre_launch.egg-info/SOURCES.txt'
+[0.512s] running build
+[0.513s] running build_py
+[0.513s] running install
+[0.513s] running install_lib
+[0.514s] running install_data
+[0.514s] running install_egg_info
+[0.515s] removing '/home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/pre_launch-0.0.0-py3.10.egg-info' (and everything under it)
+[0.515s] Copying ../../build/pre_launch/pre_launch.egg-info to /home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages/pre_launch-0.0.0-py3.10.egg-info
+[0.515s] running install_scripts
+[0.528s] Installing motor_cont script to /home/vikas_maurya/wc_ws/install/pre_launch/lib/pre_launch
+[0.528s] Installing wc_node_main script to /home/vikas_maurya/wc_ws/install/pre_launch/lib/pre_launch
+[0.528s] writing list of installed files to '/home/vikas_maurya/wc_ws/build/pre_launch/install.log'
+[0.543s] Invoked command in '/home/vikas_maurya/wc_ws/src/pre_launch' returned '0': PYTHONPATH=/home/vikas_maurya/wc_ws/build/pre_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pre_launch build --build-base /home/vikas_maurya/wc_ws/build/pre_launch/build install --record /home/vikas_maurya/wc_ws/build/pre_launch/install.log --single-version-externally-managed install_data

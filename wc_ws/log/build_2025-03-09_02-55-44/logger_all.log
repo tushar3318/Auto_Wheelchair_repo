@@ -1,0 +1,338 @@
+[0.060s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.060s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7edc2e4f5f30>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7edc2e4f5a50>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7edc2e4f5a50>>)
+[0.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.151s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/vikas_maurya/wc_ws'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/pre_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/pre_launch) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/pre_launch) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/pre_launch) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/pre_launch) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/pre_launch) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/pre_launch) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/pre_launch) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/pre_launch) by extension 'ros'
+[0.160s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pre_launch' with type 'ros.ament_python' and name 'pre_launch'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/wc_description) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/wc_description) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/wc_description) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/wc_description) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/wc_description) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/wc_description) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/wc_description) by extension 'colcon_meta'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/wc_description) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/wc_description) by extension 'ros'
+[0.160s] DEBUG:colcon.colcon_core.package_identification:Package 'src/wc_description' with type 'ros.ament_cmake' and name 'wc_description'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/wc_navigation2) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/wc_navigation2) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/wc_navigation2) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/wc_navigation2) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/wc_navigation2) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/wc_navigation2) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/wc_navigation2) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/wc_navigation2) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/wc_navigation2) by extension 'ros'
+[0.161s] DEBUG:colcon.colcon_core.package_identification:Package 'src/wc_navigation2' with type 'ros.ament_cmake' and name 'wc_navigation2'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ros'
+[0.161s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ydlidar_ros2_driver' with type 'ros.ament_cmake' and name 'ydlidar_ros2_driver'
+[0.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.180s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.180s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.180s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.181s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/vikas_maurya/wc_ws/install/wc_navigation2' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.181s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/vikas_maurya/wc_ws/install/wc_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.181s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.181s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/vikas_maurya/wc_ws/install/wc_navigation2' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.181s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/vikas_maurya/wc_ws/install/wc_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.181s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/vikas_maurya/wc_ws/install
+[0.182s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 14 installed packages in /home/vikas_maurya/ros2_ws/install
+[0.182s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 391 installed packages in /opt/ros/humble
+[0.183s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.207s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'ydlidar_ros2_driver' is in: /home/vikas_maurya/ros2_ws/install/ydlidar_ros2_driver
+	'wc_description' is in: /home/vikas_maurya/ros2_ws/install/wc_description
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding wc_description ydlidar_ros2_driver
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'wc_description' build argument 'cmake_args' from command line to 'None'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'wc_description' build argument 'cmake_target' from command line to 'None'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'wc_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'wc_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'wc_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'wc_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'wc_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'wc_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'wc_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.208s] DEBUG:colcon.colcon_core.verb:Building package 'wc_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vikas_maurya/wc_ws/build/wc_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vikas_maurya/wc_ws/install/wc_description', 'merge_install': False, 'path': '/home/vikas_maurya/wc_ws/src/wc_description', 'symlink_install': False, 'test_result_base': None}
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'wc_navigation2' build argument 'cmake_args' from command line to 'None'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'wc_navigation2' build argument 'cmake_target' from command line to 'None'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'wc_navigation2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'wc_navigation2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'wc_navigation2' build argument 'cmake_clean_first' from command line to 'False'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'wc_navigation2' build argument 'cmake_force_configure' from command line to 'False'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'wc_navigation2' build argument 'ament_cmake_args' from command line to 'None'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'wc_navigation2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'wc_navigation2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.208s] DEBUG:colcon.colcon_core.verb:Building package 'wc_navigation2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vikas_maurya/wc_ws/build/wc_navigation2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vikas_maurya/wc_ws/install/wc_navigation2', 'merge_install': False, 'path': '/home/vikas_maurya/wc_ws/src/wc_navigation2', 'symlink_install': False, 'test_result_base': None}
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_args' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.209s] DEBUG:colcon.colcon_core.verb:Building package 'ydlidar_ros2_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vikas_maurya/wc_ws/build/ydlidar_ros2_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver', 'merge_install': False, 'path': '/home/vikas_maurya/wc_ws/src/ydlidar_ros2_driver', 'symlink_install': False, 'test_result_base': None}
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'pre_launch' build argument 'cmake_args' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'pre_launch' build argument 'cmake_target' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'pre_launch' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'pre_launch' build argument 'cmake_clean_cache' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'pre_launch' build argument 'cmake_clean_first' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'pre_launch' build argument 'cmake_force_configure' from command line to 'False'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'pre_launch' build argument 'ament_cmake_args' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'pre_launch' build argument 'catkin_cmake_args' from command line to 'None'
+[0.209s] Level 5:colcon.colcon_core.verb:set package 'pre_launch' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.209s] DEBUG:colcon.colcon_core.verb:Building package 'pre_launch' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vikas_maurya/wc_ws/build/pre_launch', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vikas_maurya/wc_ws/install/pre_launch', 'merge_install': False, 'path': '/home/vikas_maurya/wc_ws/src/pre_launch', 'symlink_install': False, 'test_result_base': None}
+[0.209s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.210s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.210s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vikas_maurya/wc_ws/src/wc_description' with build type 'ament_cmake'
+[0.210s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vikas_maurya/wc_ws/src/wc_description'
+[0.212s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.212s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.212s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.215s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vikas_maurya/wc_ws/src/wc_navigation2' with build type 'ament_cmake'
+[0.215s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vikas_maurya/wc_ws/src/wc_navigation2'
+[0.215s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.215s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.218s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vikas_maurya/wc_ws/src/ydlidar_ros2_driver' with build type 'ament_cmake'
+[0.219s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vikas_maurya/wc_ws/src/ydlidar_ros2_driver'
+[0.219s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.219s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.225s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vikas_maurya/wc_ws/build/wc_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vikas_maurya/wc_ws/install/pre_launch:/home/vikas_maurya/ros2_ws/install/wc_teleop:/home/vikas_maurya/ros2_ws/install/wc_example:/opt/ros/humble /usr/bin/cmake /home/vikas_maurya/wc_ws/src/wc_description -DCMAKE_INSTALL_PREFIX=/home/vikas_maurya/wc_ws/install/wc_description
+[0.228s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vikas_maurya/wc_ws/build/wc_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vikas_maurya/wc_ws/install/pre_launch:/home/vikas_maurya/ros2_ws/install/wc_teleop:/home/vikas_maurya/ros2_ws/install/wc_example:/opt/ros/humble /usr/bin/cmake /home/vikas_maurya/wc_ws/src/wc_navigation2 -DCMAKE_INSTALL_PREFIX=/home/vikas_maurya/wc_ws/install/wc_navigation2
+[0.230s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vikas_maurya/wc_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vikas_maurya/wc_ws/install/pre_launch:/home/vikas_maurya/ros2_ws/install/wc_teleop:/home/vikas_maurya/ros2_ws/install/wc_example:/opt/ros/humble /usr/bin/cmake /home/vikas_maurya/wc_ws/src/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver
+[1.168s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vikas_maurya/wc_ws/build/wc_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vikas_maurya/wc_ws/install/pre_launch:/home/vikas_maurya/ros2_ws/install/wc_teleop:/home/vikas_maurya/ros2_ws/install/wc_example:/opt/ros/humble /usr/bin/cmake /home/vikas_maurya/wc_ws/src/wc_description -DCMAKE_INSTALL_PREFIX=/home/vikas_maurya/wc_ws/install/wc_description
+[1.171s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vikas_maurya/wc_ws/build/wc_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vikas_maurya/wc_ws/install/pre_launch:/home/vikas_maurya/ros2_ws/install/wc_teleop:/home/vikas_maurya/ros2_ws/install/wc_example:/opt/ros/humble /usr/bin/cmake --build /home/vikas_maurya/wc_ws/build/wc_description -- -j12 -l12
+[1.202s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vikas_maurya/wc_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vikas_maurya/wc_ws/install/pre_launch:/home/vikas_maurya/ros2_ws/install/wc_teleop:/home/vikas_maurya/ros2_ws/install/wc_example:/opt/ros/humble /usr/bin/cmake /home/vikas_maurya/wc_ws/src/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver
+[1.204s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vikas_maurya/wc_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vikas_maurya/wc_ws/install/pre_launch:/home/vikas_maurya/ros2_ws/install/wc_teleop:/home/vikas_maurya/ros2_ws/install/wc_example:/opt/ros/humble /usr/bin/cmake --build /home/vikas_maurya/wc_ws/build/ydlidar_ros2_driver -- -j12 -l12
+[1.213s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vikas_maurya/wc_ws/build/wc_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vikas_maurya/wc_ws/install/pre_launch:/home/vikas_maurya/ros2_ws/install/wc_teleop:/home/vikas_maurya/ros2_ws/install/wc_example:/opt/ros/humble /usr/bin/cmake --build /home/vikas_maurya/wc_ws/build/wc_description -- -j12 -l12
+[1.223s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vikas_maurya/wc_ws/build/wc_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vikas_maurya/wc_ws/install/pre_launch:/home/vikas_maurya/ros2_ws/install/wc_teleop:/home/vikas_maurya/ros2_ws/install/wc_example:/opt/ros/humble /usr/bin/cmake --install /home/vikas_maurya/wc_ws/build/wc_description
+[1.231s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vikas_maurya/wc_ws/build/wc_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vikas_maurya/wc_ws/install/pre_launch:/home/vikas_maurya/ros2_ws/install/wc_teleop:/home/vikas_maurya/ros2_ws/install/wc_example:/opt/ros/humble /usr/bin/cmake /home/vikas_maurya/wc_ws/src/wc_navigation2 -DCMAKE_INSTALL_PREFIX=/home/vikas_maurya/wc_ws/install/wc_navigation2
+[1.232s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vikas_maurya/wc_ws/build/wc_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vikas_maurya/wc_ws/install/pre_launch:/home/vikas_maurya/ros2_ws/install/wc_teleop:/home/vikas_maurya/ros2_ws/install/wc_example:/opt/ros/humble /usr/bin/cmake --build /home/vikas_maurya/wc_ws/build/wc_navigation2 -- -j12 -l12
+[1.241s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wc_description)
+[1.241s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vikas_maurya/wc_ws/build/wc_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vikas_maurya/wc_ws/install/pre_launch:/home/vikas_maurya/ros2_ws/install/wc_teleop:/home/vikas_maurya/ros2_ws/install/wc_example:/opt/ros/humble /usr/bin/cmake --install /home/vikas_maurya/wc_ws/build/wc_description
+[1.244s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_description' for CMake module files
+[1.245s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_description' for CMake config files
+[1.246s] Level 1:colcon.colcon_core.shell:create_environment_hook('wc_description', 'cmake_prefix_path')
+[1.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vikas_maurya/wc_ws/install/wc_description/share/wc_description/hook/cmake_prefix_path.ps1'
+[1.247s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vikas_maurya/wc_ws/install/wc_description/share/wc_description/hook/cmake_prefix_path.dsv'
+[1.248s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vikas_maurya/wc_ws/install/wc_description/share/wc_description/hook/cmake_prefix_path.sh'
+[1.249s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_description/bin'
+[1.249s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_description/lib/pkgconfig/wc_description.pc'
+[1.249s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_description/lib/python3.10/site-packages'
+[1.250s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_description/bin'
+[1.250s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/wc_description/share/wc_description/package.ps1'
+[1.251s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vikas_maurya/wc_ws/install/wc_description/share/wc_description/package.dsv'
+[1.252s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/wc_description/share/wc_description/package.sh'
+[1.253s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/wc_description/share/wc_description/package.bash'
+[1.254s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/wc_description/share/wc_description/package.zsh'
+[1.255s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vikas_maurya/wc_ws/install/wc_description/share/colcon-core/packages/wc_description)
+[1.255s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wc_description)
+[1.256s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_description' for CMake module files
+[1.257s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_description' for CMake config files
+[1.257s] Level 1:colcon.colcon_core.shell:create_environment_hook('wc_description', 'cmake_prefix_path')
+[1.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vikas_maurya/wc_ws/install/wc_description/share/wc_description/hook/cmake_prefix_path.ps1'
+[1.258s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vikas_maurya/wc_ws/install/wc_description/share/wc_description/hook/cmake_prefix_path.dsv'
+[1.258s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vikas_maurya/wc_ws/install/wc_description/share/wc_description/hook/cmake_prefix_path.sh'
+[1.259s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_description/bin'
+[1.259s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_description/lib/pkgconfig/wc_description.pc'
+[1.260s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_description/lib/python3.10/site-packages'
+[1.260s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_description/bin'
+[1.260s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/wc_description/share/wc_description/package.ps1'
+[1.261s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vikas_maurya/wc_ws/install/wc_description/share/wc_description/package.dsv'
+[1.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/wc_description/share/wc_description/package.sh'
+[1.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/wc_description/share/wc_description/package.bash'
+[1.263s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/wc_description/share/wc_description/package.zsh'
+[1.263s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vikas_maurya/wc_ws/install/wc_description/share/colcon-core/packages/wc_description)
+[1.270s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vikas_maurya/wc_ws/build/wc_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vikas_maurya/wc_ws/install/pre_launch:/home/vikas_maurya/ros2_ws/install/wc_teleop:/home/vikas_maurya/ros2_ws/install/wc_example:/opt/ros/humble /usr/bin/cmake --build /home/vikas_maurya/wc_ws/build/wc_navigation2 -- -j12 -l12
+[1.272s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vikas_maurya/wc_ws/build/wc_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vikas_maurya/wc_ws/install/pre_launch:/home/vikas_maurya/ros2_ws/install/wc_teleop:/home/vikas_maurya/ros2_ws/install/wc_example:/opt/ros/humble /usr/bin/cmake --install /home/vikas_maurya/wc_ws/build/wc_navigation2
+[1.286s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wc_navigation2)
+[1.286s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_navigation2' for CMake module files
+[1.287s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vikas_maurya/wc_ws/build/wc_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vikas_maurya/wc_ws/install/pre_launch:/home/vikas_maurya/ros2_ws/install/wc_teleop:/home/vikas_maurya/ros2_ws/install/wc_example:/opt/ros/humble /usr/bin/cmake --install /home/vikas_maurya/wc_ws/build/wc_navigation2
+[1.287s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_navigation2' for CMake config files
+[1.287s] Level 1:colcon.colcon_core.shell:create_environment_hook('wc_navigation2', 'cmake_prefix_path')
+[1.287s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vikas_maurya/wc_ws/install/wc_navigation2/share/wc_navigation2/hook/cmake_prefix_path.ps1'
+[1.288s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vikas_maurya/wc_ws/install/wc_navigation2/share/wc_navigation2/hook/cmake_prefix_path.dsv'
+[1.288s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vikas_maurya/wc_ws/install/wc_navigation2/share/wc_navigation2/hook/cmake_prefix_path.sh'
+[1.289s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_navigation2/bin'
+[1.289s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_navigation2/lib/pkgconfig/wc_navigation2.pc'
+[1.289s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_navigation2/lib/python3.10/site-packages'
+[1.290s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_navigation2/bin'
+[1.290s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/wc_navigation2/share/wc_navigation2/package.ps1'
+[1.290s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vikas_maurya/wc_ws/install/wc_navigation2/share/wc_navigation2/package.dsv'
+[1.291s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/wc_navigation2/share/wc_navigation2/package.sh'
+[1.291s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/wc_navigation2/share/wc_navigation2/package.bash'
+[1.292s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/wc_navigation2/share/wc_navigation2/package.zsh'
+[1.292s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vikas_maurya/wc_ws/install/wc_navigation2/share/colcon-core/packages/wc_navigation2)
+[1.293s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wc_navigation2)
+[1.293s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_navigation2' for CMake module files
+[1.293s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_navigation2' for CMake config files
+[1.294s] Level 1:colcon.colcon_core.shell:create_environment_hook('wc_navigation2', 'cmake_prefix_path')
+[1.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vikas_maurya/wc_ws/install/wc_navigation2/share/wc_navigation2/hook/cmake_prefix_path.ps1'
+[1.294s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vikas_maurya/wc_ws/install/wc_navigation2/share/wc_navigation2/hook/cmake_prefix_path.dsv'
+[1.295s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vikas_maurya/wc_ws/install/wc_navigation2/share/wc_navigation2/hook/cmake_prefix_path.sh'
+[1.295s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_navigation2/bin'
+[1.295s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_navigation2/lib/pkgconfig/wc_navigation2.pc'
+[1.296s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_navigation2/lib/python3.10/site-packages'
+[1.296s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/wc_navigation2/bin'
+[1.296s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/wc_navigation2/share/wc_navigation2/package.ps1'
+[1.297s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vikas_maurya/wc_ws/install/wc_navigation2/share/wc_navigation2/package.dsv'
+[1.297s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/wc_navigation2/share/wc_navigation2/package.sh'
+[1.298s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/wc_navigation2/share/wc_navigation2/package.bash'
+[1.298s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/wc_navigation2/share/wc_navigation2/package.zsh'
+[1.299s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vikas_maurya/wc_ws/install/wc_navigation2/share/colcon-core/packages/wc_navigation2)
+[6.511s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vikas_maurya/wc_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vikas_maurya/wc_ws/install/pre_launch:/home/vikas_maurya/ros2_ws/install/wc_teleop:/home/vikas_maurya/ros2_ws/install/wc_example:/opt/ros/humble /usr/bin/cmake --build /home/vikas_maurya/wc_ws/build/ydlidar_ros2_driver -- -j12 -l12
+[6.512s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vikas_maurya/wc_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vikas_maurya/wc_ws/install/pre_launch:/home/vikas_maurya/ros2_ws/install/wc_teleop:/home/vikas_maurya/ros2_ws/install/wc_example:/opt/ros/humble /usr/bin/cmake --install /home/vikas_maurya/wc_ws/build/ydlidar_ros2_driver
+[6.526s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ydlidar_ros2_driver)
+[6.527s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver' for CMake module files
+[6.527s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vikas_maurya/wc_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vikas_maurya/wc_ws/install/pre_launch:/home/vikas_maurya/ros2_ws/install/wc_teleop:/home/vikas_maurya/ros2_ws/install/wc_example:/opt/ros/humble /usr/bin/cmake --install /home/vikas_maurya/wc_ws/build/ydlidar_ros2_driver
+[6.527s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver' for CMake config files
+[6.528s] Level 1:colcon.colcon_core.shell:create_environment_hook('ydlidar_ros2_driver', 'cmake_prefix_path')
+[6.528s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.ps1'
+[6.528s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.dsv'
+[6.529s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.sh'
+[6.529s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/lib'
+[6.529s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/bin'
+[6.529s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/lib/pkgconfig/ydlidar_ros2_driver.pc'
+[6.530s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/lib/python3.10/site-packages'
+[6.530s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/bin'
+[6.530s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.ps1'
+[6.531s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv'
+[6.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.sh'
+[6.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.bash'
+[6.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.zsh'
+[6.532s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/share/colcon-core/packages/ydlidar_ros2_driver)
+[6.532s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ydlidar_ros2_driver)
+[6.532s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver' for CMake module files
+[6.532s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver' for CMake config files
+[6.532s] Level 1:colcon.colcon_core.shell:create_environment_hook('ydlidar_ros2_driver', 'cmake_prefix_path')
+[6.533s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.ps1'
+[6.533s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.dsv'
+[6.533s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.sh'
+[6.533s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/lib'
+[6.533s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/bin'
+[6.533s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/lib/pkgconfig/ydlidar_ros2_driver.pc'
+[6.534s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/lib/python3.10/site-packages'
+[6.534s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/bin'
+[6.534s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.ps1'
+[6.534s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv'
+[6.534s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.sh'
+[6.535s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.bash'
+[6.535s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.zsh'
+[6.535s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vikas_maurya/wc_ws/install/ydlidar_ros2_driver/share/colcon-core/packages/ydlidar_ros2_driver)
+[6.535s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/vikas_maurya/wc_ws/src/pre_launch' with build type 'ament_python'
+[6.535s] Level 1:colcon.colcon_core.shell:create_environment_hook('pre_launch', 'ament_prefix_path')
+[6.535s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vikas_maurya/wc_ws/install/pre_launch/share/pre_launch/hook/ament_prefix_path.ps1'
+[6.536s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vikas_maurya/wc_ws/install/pre_launch/share/pre_launch/hook/ament_prefix_path.dsv'
+[6.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vikas_maurya/wc_ws/install/pre_launch/share/pre_launch/hook/ament_prefix_path.sh'
+[6.537s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.537s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.698s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/vikas_maurya/wc_ws/src/pre_launch'
+[6.698s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.698s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.910s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vikas_maurya/wc_ws/src/pre_launch': PYTHONPATH=/home/vikas_maurya/wc_ws/build/pre_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pre_launch build --build-base /home/vikas_maurya/wc_ws/build/pre_launch/build install --record /home/vikas_maurya/wc_ws/build/pre_launch/install.log --single-version-externally-managed install_data
+[7.079s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/pre_launch' for CMake module files
+[7.080s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vikas_maurya/wc_ws/src/pre_launch' returned '0': PYTHONPATH=/home/vikas_maurya/wc_ws/build/pre_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pre_launch build --build-base /home/vikas_maurya/wc_ws/build/pre_launch/build install --record /home/vikas_maurya/wc_ws/build/pre_launch/install.log --single-version-externally-managed install_data
+[7.080s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/pre_launch' for CMake config files
+[7.081s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/pre_launch/lib'
+[7.081s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/pre_launch/bin'
+[7.081s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/pre_launch/lib/pkgconfig/pre_launch.pc'
+[7.081s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/pre_launch/lib/python3.10/site-packages'
+[7.081s] Level 1:colcon.colcon_core.shell:create_environment_hook('pre_launch', 'pythonpath')
+[7.081s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vikas_maurya/wc_ws/install/pre_launch/share/pre_launch/hook/pythonpath.ps1'
+[7.082s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vikas_maurya/wc_ws/install/pre_launch/share/pre_launch/hook/pythonpath.dsv'
+[7.082s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vikas_maurya/wc_ws/install/pre_launch/share/pre_launch/hook/pythonpath.sh'
+[7.083s] Level 1:colcon.colcon_core.environment:checking '/home/vikas_maurya/wc_ws/install/pre_launch/bin'
+[7.083s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pre_launch)
+[7.083s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/pre_launch/share/pre_launch/package.ps1'
+[7.083s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vikas_maurya/wc_ws/install/pre_launch/share/pre_launch/package.dsv'
+[7.084s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/pre_launch/share/pre_launch/package.sh'
+[7.084s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/pre_launch/share/pre_launch/package.bash'
+[7.085s] INFO:colcon.colcon_core.shell:Creating package script '/home/vikas_maurya/wc_ws/install/pre_launch/share/pre_launch/package.zsh'
+[7.085s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vikas_maurya/wc_ws/install/pre_launch/share/colcon-core/packages/pre_launch)
+[7.085s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.085s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.085s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.085s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.090s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.090s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.090s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.101s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.101s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vikas_maurya/wc_ws/install/local_setup.ps1'
+[7.102s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/vikas_maurya/wc_ws/install/_local_setup_util_ps1.py'
+[7.103s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vikas_maurya/wc_ws/install/setup.ps1'
+[7.105s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vikas_maurya/wc_ws/install/local_setup.sh'
+[7.105s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/vikas_maurya/wc_ws/install/_local_setup_util_sh.py'
+[7.106s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vikas_maurya/wc_ws/install/setup.sh'
+[7.107s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vikas_maurya/wc_ws/install/local_setup.bash'
+[7.107s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vikas_maurya/wc_ws/install/setup.bash'
+[7.108s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vikas_maurya/wc_ws/install/local_setup.zsh'
+[7.108s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vikas_maurya/wc_ws/install/setup.zsh'
