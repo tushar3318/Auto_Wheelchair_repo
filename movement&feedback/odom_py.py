@@ -1,13 +1,22 @@
 import rclpy
+import serial
+import math
 from rclpy.node import Node
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Quaternion
 import tf_transformations as tf
-import math
 
 class OdometryPublisher(Node):
     def __init__(self):
         super().__init__('wc_odometry')
+
+        # Open serial connection with Arduino
+        try:
+            self.serial_port = serial.Serial('/dev/ttyACM0', 9600, timeout=1)
+            self.get_logger().info("Connected to Arduino on /dev/ttyACM0")
+        except serial.SerialException as e:
+            self.get_logger().error(f"Failed to open serial port: {str(e)}")
+            return
 
         # Parameters
         self.declare_parameter('wheel_radius', 0.15)  # 15 cm wheels
@@ -24,17 +33,35 @@ class OdometryPublisher(Node):
         # Odometry publisher
         self.odom_pub = self.create_publisher(Odometry, '/odom', 10)
 
-        # Timer callback
+        # Timer to update odometry at 10Hz
         self.timer = self.create_timer(0.1, self.update_odometry)  # 10Hz
 
     def get_wheel_rpm(self):
-        """Dummy function to simulate getting RPM from Hall sensors."""
-        rpm_left = 30.0  # Example value
-        rpm_right = 32.0 # Example value
-        return rpm_left, rpm_right
+        """Reads RPM values from Arduino over Serial."""
+        try:
+            data = self.serial_port.readline().decode('utf-8').strip()
+            if not data:
+                return None, None
+
+            parts = data.split('|')
+            if len(parts) != 2:
+                self.get_logger().warn(f"Malformed data received: {data}")
+                return None, None
+
+            rpm_left = int(parts[0])
+            rpm_right = int(parts[1])
+
+            return rpm_left, rpm_right
+
+        except (ValueError, serial.SerialException) as e:
+            self.get_logger().error(f"Error reading serial data: {str(e)}")
+            return None, None
 
     def update_odometry(self):
         rpm_left, rpm_right = self.get_wheel_rpm()
+        if rpm_left is None or rpm_right is None:
+            return  # Skip if no valid data
+
         dt = 0.1  # Timer interval in seconds
 
         # Convert RPM to wheel velocity (m/s)
@@ -72,12 +99,22 @@ class OdometryPublisher(Node):
         # Publish odometry
         self.odom_pub.publish(odom_msg)
 
+        self.get_logger().info(f"Published: linear_x={linear_velocity:.2f}, angular_z={angular_velocity:.2f}")
+
 def main(args=None):
     rclpy.init(args=args)
     node = OdometryPublisher()
-    rclpy.spin(node)
-    node.destroy_node()
-    rclpy.shutdown()
+
+    if not hasattr(node, "serial_port"):  # If serial failed, don't run
+        return
+
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        node.get_logger().info("Shutting down odometry node.")
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
