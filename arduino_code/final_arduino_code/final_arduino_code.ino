@@ -24,7 +24,7 @@ const int y_end_left = 0;
 
 // Selection Pins
 const int slct1 = 7;
-const int slct2 = 2;
+const int slct2 = 4;
 
 // Scaling factors for voice control
 const float scaleFactor1 = 0.42;
