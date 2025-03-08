@@ -133,8 +133,8 @@ void loop() {
       right_pwm = 0;
     }
 
-    analogWrite(R_left, left_pwm > 46 ? left_pwm : 0);
-    analogWrite(R_right, right_pwm > 46 ? right_pwm : 0);
+    analogWrite(R_left, left_pwm > 48 ? left_pwm : 0);
+    analogWrite(R_right, right_pwm > 48 ? right_pwm : 0);
   }
 
   // Stop Mode (Failsafe)
