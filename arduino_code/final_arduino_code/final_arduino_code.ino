@@ -121,6 +121,8 @@ void loop() {
 
   // Autonomous Mode (Receiving Serial Commands)
   else if (state1 == LOW && state2 == HIGH) {
+    left_pwm = 0;   // Ensure default to zero
+    right_pwm = 0;
     if (Serial.available() > 0) {
       String command = Serial.readStringUntil('\n');
       left_pwm = command.substring(1, command.indexOf("R")).toInt();
