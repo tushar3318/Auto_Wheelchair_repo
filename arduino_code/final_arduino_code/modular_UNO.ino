@@ -122,7 +122,7 @@ void autonomousMode() {
   
   if (Serial.available() > 0) {
     if (first_run) {
-      delay(200);
+      delay(400);
       first_run = false;
      }
     String command = Serial.readStringUntil('\n');
