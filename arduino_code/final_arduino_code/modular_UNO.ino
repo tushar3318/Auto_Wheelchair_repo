@@ -119,11 +119,12 @@ void voiceControlMode() {
 }
 
 void autonomousMode() {
-  if (first_run) {
-    delay(200);
-    first_run = false;
-  }
+  
   if (Serial.available() > 0) {
+    if (first_run) {
+      delay(200);
+      first_run = false;
+     }
     String command = Serial.readStringUntil('\n');
 
     int l_index = command.indexOf("L");
