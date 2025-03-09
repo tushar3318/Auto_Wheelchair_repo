@@ -32,8 +32,8 @@ class MotorController(Node):
 
         # motor specific.... change accordingly
         # Map speeds to PWM range (46 - 82)
-        left_pwm = int(self.speed_to_pwm(left_speed, 66, 90))  # Map to the desired range
-        right_pwm = int(self.speed_to_pwm(right_speed, 66, 90))
+        left_pwm = int(self.speed_to_pwm(left_speed, 62, 88))  # Map to the desired range
+        right_pwm = int(self.speed_to_pwm(right_speed, 62, 88))
         
         # Send PWM values to Arduino as LXXXRXXX (e.g., L127R130)
         command = f"L{left_pwm:03d}R{right_pwm:03d}\n"
