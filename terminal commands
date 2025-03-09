@@ -1,0 +1,136 @@
+https://github.com/ROBOTIS-GIT/turtlebot3_simulations/issues/211
+
+https://github.com/YDLIDAR/ydlidar_ros2_driver/tree/humble
+
+https://roboticsbackend.com/ros2-nav2-generate-a-map-with-slam_toolbox/
+
+https://www.waveshare.com/wiki/Cartographer_Map_Building
+
+https://github.com/tu-darmstadt-ros-pkg/hector_slam
+
+https://github.com/tu-darmstadt-ros-pkg/hector_slam/tree/melodic-devel/hector_slam_launch/launch
+
+https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/#pc-setup
+
+https://github.com/TheNoobInventor/lidarbot
+
+git add .
+git commit -m "commit_message"
+git push origin main
+
+
+for adding the wheels and to add tf from wheels to base_link
+ ros2 run joint_state_publisher_gui joint_state_publisher_gui
+
+
+source /usr/share/gazebo/setup.sh
+
+
+
+ros2 launch articubot_one rsp.launch.py
+
+
+for_opening the urdf model in the rviz with the default settings
+rviz2 -d src/my_bot/config/view_bot.rviz
+
+
+
+to open gazebo
+ros2 launch gazebo_ros gazebo.launch.py
+ros2 launch articulate_one launch_sim.launch.py 
+
+opens the file with the world and gazebo
+ros2 launch articubot_one launch_sim.launch.py world:=worlds/obstacles.world
+
+
+to add spawn entity
+ros2 run gazebo_ros spawn_entity.py -topic robot_description -entity bot_name
+ros2 run gazebo_ros spawn_entity.py
+
+
+ros2 run ydlidar_ros2_driver ydlidar_ros2_driver_node --ros-args -p serial_port:=/dev/ttyUSB0 -p frame_id:=laser_frame -p angle_compensate:=true -p scan_mode:=Standard
+
+
+// to start the gazebo
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+ros2 launch turtlebot3_gazebo empty_world.launch.py 
+
+ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=/home/vivos/ros2_ws/src/teleop_motor_bridge/maps/my_map.yaml
+
+// to start the rviz with the default configurations
+ ros2 run rviz2 rviz2 -d /opt/ros/humble/share/nav2_bringup/rviz/nav2_default_view.rviz
+
+
+// for controlling the turtlebot3
+ros2 run turtlebot3_teleop teleop_keyboard
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+
+
+// for opening the slam toolbox
+ros2 launch slam_toolbox online_async_launch.py use_sim_time:=True
+
+// for Navigation_2 stack
+ ros2 launch nav2_bringup navigation_launch.py use_sim_time:=True
+ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True
+
+
+// for navigating the robot in the map
+ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=my_map.yaml
+
+
+// for save the map
+ros2 run nav2_map_server map_saver_cli -f my_map
+
+
+for running the lidar
+ros2 launch ydlidar_ros2_driver ydlidar_launch_view.py 
+
+ros2 launch ugv02_cartographer cartographer.launch.py
+
+nano ~/turtlebot3_ws/src/turtlebot3/turtlebot3_description/urdf/turtlebot3_burger.urdf.xacro
+
+
+mkdir -p ~/turtlebot3_ws/src
+cd ~/turtlebot3_ws
+cd ~/turtlebot3_ws/src
+git clone -b humble-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
+git clone -b humble-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+git clone -b humble-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+cd ~/turtlebot3_ws
+rosdep install --from-paths src --ignore-src -r -y
+colcon build
+source ~/turtlebot3_ws/install/setup.bash
+gedit ~/.bashrc
+source ~/turtlebot3_ws/install/setup.bash
+export TURTLEBOT3_MODEL=burger
+echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
+
+
+ros2 run nav2_map_server map_server --ros-args -p yaml_filename:=/home/vivos/ros2_ws/src/teleop_motor_bridge/maps/map5.yaml
+
+
+ros2 run controller_manager spawner joint_broad
+ros2 run controller_manager spawner diff_cont
+
+
+ros2 launch my_bot launch_sim.launch.py world:=./src/my_bot/worlds/obstacles.world 
+rviz2 -d src/my_bot/config/main.rviz 
+cp /opt/ros/humble/share/slam_toolbox/config/mapper_params_online_async.yaml ros2_ws/src/my_bot/config/
+
+ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/diff_cont/cmd_vel_unstamped
+
+ros2 launch slam_toolbox online_async_launch.py params_file:=./src/my_bot/config/mapper_params_online_async.yaml use_sim_time:=true
+
+ros2 run nav2_map_server map_server --ros-args -p yaml_filename:=my_map_save.yaml -p use_sim_time:=true
+ros2 run nav2_util lifecycle_bringup map_server
+
+ros2 run nav2_amcl amcl --ros-args -p use_sim_time:=true
+ros2 run nav2_util lifecycle_bringup amcl
+
+ros2 launch nav2_bringup localization_launch.py map:=./src/teleop_motor_bridge/maps/map_9.yaml use_sim_time:=true
+
+
+ros2 run nav2_map_server map_server --ros-args -p yaml_filename:=/home/vivos/ros2_ws/src/teleop_motor_bridge/maps/map_9.yaml -p use_sim_time:=true
+
+ros2 launch ydlidar_ros2_driver ydlidar_launch_view.py 
+ros2 launch turtlebot3_navigation2 navigation2.launch.py  map:=my_map32.yaml
